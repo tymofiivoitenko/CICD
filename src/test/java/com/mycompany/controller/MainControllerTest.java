@@ -27,4 +27,9 @@ public class MainControllerTest {
     public void mathTest() {
         assertThat(2 + 2).isEqualTo(4);
     }
+
+    @Test
+    public void mathTest2() {
+        assertThat(2 + 1).isEqualTo(3);
+    }
 }
