@@ -4,6 +4,7 @@ metadata:
   name: cicd-service
   annotations:
     service.beta.kubernetes.io/aws-load-balancer-internal: "false"
+    service.beta.kubernetes.io/aws-load-balancer-type: "external"
 spec:
   type: LoadBalancer
   ports:
