@@ -6,5 +6,5 @@ RUN gradle clean build --no-daemon
 
 # Run
 FROM eclipse-temurin:21-jre
-COPY --from=build /home/gradle/project/build/libs/*-boot.jar /app/app.jar
+COPY --from=build /home/gradle/project/build/libs/CICD-*-SNAPSHOT.jar /app/app.jar
 ENTRYPOINT ["java", "-jar", "/app/app.jar"]
