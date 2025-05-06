@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-        AWS_REGION = "eu-central-1"
+        AWS_REGION = 'us-east-2'
         ECR_REGISTRY = "788133893166.dkr.ecr.eu-central-1.amazonaws.com"
         ECR_REPO = "cicd-app"
         CLUSTER_NAME = "my-cicd-cluster"
