@@ -4,6 +4,7 @@ metadata:
   name: cicd-service
   annotations:
     service.beta.kubernetes.io/aws-load-balancer-type: "external"
+    service.beta.kubernetes.io/aws-load-balancer-subnets: "subnet-04fa7cb900bd6b39e,subnet-071f8da59da53a6c6,subnet-0dbf841ad6230adce"
 spec:
   type: LoadBalancer
   selector:
