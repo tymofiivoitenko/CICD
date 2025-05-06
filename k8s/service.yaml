@@ -3,12 +3,11 @@ kind: Service
 metadata:
   name: cicd-service
   annotations:
-    service.beta.kubernetes.io/aws-load-balancer-internal: "false"
     service.beta.kubernetes.io/aws-load-balancer-type: "external"
 spec:
   type: LoadBalancer
+  selector:
+    app: cicd-app
   ports:
     - port: 80
       targetPort: 8080
-  selector:
-    app: cicd
