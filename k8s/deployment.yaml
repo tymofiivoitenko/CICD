@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: cicd-app
-          image: 788133893166.dkr.ecr.eu-central-1.amazonaws.com/cicd-app:latest
+          image: 788133893166.dkr.ecr.us-east-2.amazonaws.com/cicd-app:latest
           ports:
             - containerPort: 8080
