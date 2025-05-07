@@ -1,10 +1,10 @@
 # Build
-FROM gradle:8.5-jdk21 AS build
+FROM --platform=linux/arm64 gradle:8.5-jdk21 AS build
 COPY --chown=gradle:gradle . /home/gradle/project
 WORKDIR /home/gradle/project
 RUN gradle clean build --no-daemon
 
 # Run
-FROM eclipse-temurin:21-jre
+FROM --platform=linux/arm64 eclipse-temurin:21-jre
 COPY --from=build /home/gradle/project/build/libs/CICD-*-SNAPSHOT.jar /app/app.jar
 ENTRYPOINT ["java", "-jar", "/app/app.jar"]
