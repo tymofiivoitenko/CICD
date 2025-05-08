@@ -20,7 +20,7 @@ public class MainControllerTest {
     public void endpointShouldReturnMessage() throws Exception {
         mockMvc.perform(get("/init"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("Init was done successfully"));
+                .andExpect(content().string("Init was done successfully. Version 2"));
     }
 
     @Test
