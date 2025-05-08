@@ -48,6 +48,8 @@ pipeline {
                 sh """
                 aws eks update-kubeconfig --region $AWS_REGION --name $CLUSTER_NAME
                 kubectl apply -f $K8S_DEPLOY_PATH/
+
+                kubectl rollout restart deployment cicd-app
                 """
             }
         }
