@@ -8,6 +8,6 @@ public class MainController {
 
     @GetMapping("/init")
     public String init() {
-        return "Init was done successfully";
+        return "Init was done successfully. Version 2";
     }
 }
