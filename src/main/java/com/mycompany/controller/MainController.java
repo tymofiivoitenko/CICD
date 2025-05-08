@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MainController {
 
-    public static String INIT_MESSAGE = "Init was done successfully. Version 3";
+    public static String INIT_MESSAGE = "Init was done successfully. Test with Pavlo";
 
     @GetMapping("/init")
     public String init() {
