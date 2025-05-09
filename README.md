@@ -1,4 +1,4 @@
-# CICD Java Spring Boot App with Jenkins & AWS EKS
+# Cloud-native CI/CD pipeline using Jenkins and AWS EKS to build, test, and deploy a RESTful application
 
 This project is a simple Spring Boot web application designed to demonstrate a complete CI/CD pipeline using Jenkins, Docker, EC2, AWS ECR, and Amazon EKS (Elastic Kubernetes Service).
 
@@ -13,7 +13,7 @@ This project is a simple Spring Boot web application designed to demonstrate a c
 - **AWS ECR** 
 - **AWS EKS**
 - **Jenkins** (running on EC2)
-- **Kubernetes manifests** in `/k8s`
+- **Kubernetes** in `/k8s`
 
 ---
 
@@ -23,9 +23,9 @@ The Jenkins pipeline does the following:
 
 1. **Builds** the Spring Boot app using Gradle
 2. **Runs unit tests**
-3. **Builds a Docker image** using the fat JAR
+3. **Builds a Docker image**
 4. **Pushes the image to ECR**
-5. **Deploys the app to EKS** using `kubectl apply`
+5. **Deploys the app to EKS**
 
 ---
 
@@ -33,7 +33,7 @@ The Jenkins pipeline does the following:
 
 - **K8s Deployment/Service**:
     - Located in `/k8s/deployment.yaml` and `/k8s/service.yaml`
-    - Deployed to EKS cluster: `my-cicd-cluster` in `us-east-2`
+    - Deployed to EKS cluster
 
 ---
 
