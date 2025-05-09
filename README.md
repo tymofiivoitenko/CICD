@@ -1,6 +1,6 @@
 # CICD Java Spring Boot App with Jenkins & AWS EKS
 
-This project is a simple Spring Boot web application designed to demonstrate a complete CI/CD pipeline using Jenkins, Docker, AWS ECR, and Amazon EKS (Elastic Kubernetes Service).
+This project is a simple Spring Boot web application designed to demonstrate a complete CI/CD pipeline using Jenkins, Docker, EC2, AWS ECR, and Amazon EKS (Elastic Kubernetes Service).
 
 ---
 
@@ -10,8 +10,8 @@ This project is a simple Spring Boot web application designed to demonstrate a c
 - **Spring Boot 3.2**
 - **Gradle**
 - **Docker**
-- **AWS ECR** (Elastic Container Registry)
-- **AWS EKS** (Kubernetes Cluster)
+- **AWS ECR** 
+- **AWS EKS**
 - **Jenkins** (running on EC2)
 - **Kubernetes manifests** in `/k8s`
 
